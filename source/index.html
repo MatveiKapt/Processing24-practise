@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Processing24</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page__body">
+  <header class="page__header header">
+    <div class="header__first-floor-wrapper">
+      <a class="header__logo">
+        <img src="img/header/logo.png" width="220" height="45" alt="Логотип компании Processing24">
+      </a>
+      <div class="header__user-nav">
+        <a class="header__phone" href="tel:+74951278280">
+          8 (495) 127-82-80
+        </a>
+        <a class="header__feedback button" href="blank.html">
+          Напишите нам
+        </a>
+        <a class="header__user button button--icon button--icon-user" href="blank.html">
+          Личный кабинет
+        </a>
+      </div>
+    </div>
+    <nav class="header__nav main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="blank.html">
+            Доставка топлива
+          </a>
+        </li>
+        <li class="main-nav__item main-nav__item--submenu">
+          <a class="main-nav__link" href="blank.html">
+            Топливные карты
+          </a>
+          <ul class="main-nav__submenu-list">
+            <li class="main-nav__submenu-item">
+              <a class="main-nav__submenu-link" href="blank.html">
+                Пункт 1
+              </a>
+            </li>
+            <li class="main-nav__submenu-item">
+              <a class="main-nav__submenu-link" href="blank.html">
+                Пункт 2
+              </a>
+            </li>
+            <li class="main-nav__submenu-item">
+              <a class="main-nav__submenu-link" href="blank.html">
+                Пункт 3
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="main-nav__item main-nav__item--submenu">
+          <a class="main-nav__link" href="blank.html">
+            АЗС
+          </a>
+          <ul class="main-nav__submenu-list">
+            <li class="main-nav__submenu-item">
+              <a class="main-nav__submenu-link" href="blank.html">
+                Пункт 1
+              </a>
+            </li>
+            <li class="main-nav__submenu-item">
+              <a class="main-nav__submenu-link" href="blank.html">
+                Пункт 2
+              </a>
+            </li>
+            <li class="main-nav__submenu-item">
+              <a class="main-nav__submenu-link" href="blank.html">
+                Пункт 3
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="blank.html">
+            Цены на топливо
+          </a>
+        </li>
+        <li class="main-nav__item main-nav__item--submenu">
+          <a class="main-nav__link" href="blank.html">
+            О компании
+          </a>
+          <ul class="main-nav__submenu-list">
+            <li class="main-nav__submenu-item">
+              <a class="main-nav__submenu-link" href="blank.html">
+                Пункт 1
+              </a>
+            </li>
+            <li class="main-nav__submenu-item">
+              <a class="main-nav__submenu-link" href="blank.html">
+                Пункт 2
+              </a>
+            </li>
+            <li class="main-nav__submenu-item">
+              <a class="main-nav__submenu-link" href="blank.html">
+                Пункт 3
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="blank.html">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page__main page-main">
+    <h1 class="page-main__page-title page-title">
+      Доставка топлива
+    </h1>
+    <section class="page-main__fast-order fast-order">
+      <h2 class="visually-hidden">Закажите топливо быстро</h2>
+      <form class="fast-order__form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="fast-order__fieldset">
+          <legend class="fast-order__legend">
+            Быстрый <span class="fast-order__blue-text">заказ топлива</span> <!-- Это ссылка? -->
+          </legend>
+          <div class="fast-order__form-inner">
+            <ul class="fast-order__input-list">
+              <li class="fast-order__input-item">
+                <label class="fast-order__label label" for="fast-order-name">
+                  Ваше имя
+                </label>
+                <input class="fast-order__input text-input" id="fast-order-name" type="text" name="name" placeholder="Иван" required>
+              </li>
+              <li class="fast-order__input-item">
+                <label class="fast-order__label label" for="fast-order-phone">
+                  Номер телефона
+                </label>
+                <input class="fast-order__input text-input" id="fast-order-phone" type="text" name="phone" pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$" placeholder="+7 (___) ___-__-__" required>
+              </li>
+              <li class="fast-order__input-item fast-order__input-item--checkbox">
+                <input class="checkbox-input visually-hidden" id="checkbox-input" name="personal-data" value="agree" type="checkbox">
+                <label class="checkbox-label" for="checkbox-input">
+                  Я согласен с условиями обработки данных
+                </label>
+              </li>
+            </ul>
+            <button class="fast-order__submit-button button button--long" type="submit">
+              Заказать топливо
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+    <section class="priсe-list page-main__price-list">
+      <h2 class="visually-hidden">
+        Цены на топливо
+      </h2>
+      <table class="priсe-list__table priсe-list-table">
+        <caption class="priсe-list-table__title section-title">
+          Стоимость топлива
+        </caption>
+        <thead class="priсe-list-table__thead">
+          <tr>
+            <th class="priсe-list-table__th-x">
+              Сорт топлива
+            </th>
+            <th class="priсe-list-table__th-x">
+              Экологический класс
+            </th>
+            <th class="priсe-list-table__th-x">
+              Производитель
+            </th>
+            <th class="priсe-list-table__th-x">
+              Наличный расчет
+            </th>
+            <th class="priсe-list-table__th-x">
+              Безналичный расчет
+            </th>
+          </tr>
+        </thead>
+        <tbody class="priсe-list-table__tbody">
+          <tr class="priсe-list-table__tr-top">
+            <th class="priсe-list-table__th-y" rowspan="5">
+              ДТ
+            </th>
+            <td class="price-list-table__td price-list-table__td--eco-class price-list-table__td--top" rowspan="3">
+              ЕВРО-5
+            </td>
+            <td class="price-list-table__td price-list-table__td--top">
+              Газпромнефть
+            </td>
+            <td class="price-list-table__td price-list-table__td--top">
+              45.43 р.
+            </td>
+            <td class="price-list-table__td price-list-table__td--top price-list-table__td--right">
+              44.43 р.
+            </td>
+          </tr>
+          <tr>
+            <td class="price-list-table__td">
+              Лукойл
+            </td>
+            <td class="price-list-table__td">
+              45.16 р.
+            </td>
+            <td class="price-list-table__td price-list-table__td--right">
+              43.98 р.
+            </td>
+          </tr>
+          <tr>
+            <td class="price-list-table__td">
+              Роснефть
+            </td>
+            <td class="price-list-table__td">
+              42.34 р.
+            </td>
+            <td class="price-list-table__td price-list-table__td--right">
+              41.64 р.
+            </td>
+          </tr>
+          <tr>
+            <td class="price-list-table__td price-list-table__td--eco-class price-list-table__td--bottom" rowspan="2">
+              ЕВРО-4
+            </td>
+            <td class="price-list-table__td">
+              Газпромнефть
+            </td>
+            <td class="price-list-table__td">
+              -
+            </td>
+            <td class="price-list-table__td price-list-table__td--right">
+              -
+            </td>
+          </tr>
+          <tr>
+            <td class="price-list-table__td price-list-table__td--bottom">
+              Лукойл
+            </td>
+            <td class="price-list-table__td price-list-table__td--bottom">
+              41.16 р.
+            </td>
+            <td class="price-list-table__td price-list-table__td--right price-list-table__td--bottom">
+              40.67 р.
+            </td>
+          </tr>
+          <tr class="price-list-table__crutch-tr">
+            <td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <th class="priсe-list-table__th-y" rowspan="8">
+              АИ-95
+            </th>
+            <td class="price-list-table__td price-list-table__td--eco-class" rowspan="3">
+              ЕВРО-5
+            </td>
+            <td class="price-list-table__td">
+              Газпромнефть
+            </td>
+            <td class="price-list-table__td">
+              45.43 р.
+            </td>
+            <td class="price-list-table__td price-list-table__td--right">
+              44.43 р.
+            </td>
+          </tr>
+          <tr>
+            <td class="price-list-table__td">
+              Роснефть
+            </td>
+            <td class="price-list-table__td">
+              42.34 р.
+            </td>
+            <td class="price-list-table__td price-list-table__td--right">
+              41.64 р.
+            </td>
+          </tr>
+          <tr>
+            <td class="price-list-table__td">
+              Лукойл
+            </td>
+            <td class="price-list-table__td">
+              45.16 р.
+            </td>
+            <td class="price-list-table__td price-list-table__td--right">
+              43.98 р.
+            </td>
+          </tr>
+          <tr>
+            <td class="price-list-table__td price-list-table__td--eco-class" rowspan="2">
+              ЕВРО-4
+            </td>
+            <td class="price-list-table__td">
+              Лукойл
+            </td>
+            <td class="price-list-table__td">
+              41.16 р.
+            </td>
+            <td class="price-list-table__td price-list-table__td--right">
+              40.67 р.
+            </td>
+          </tr>
+          <tr>
+            <td class="price-list-table__td">
+              Газпромнефть
+            </td>
+            <td class="price-list-table__td">
+              -
+            </td>
+            <td class="price-list-table__td price-list-table__td--right">
+              -
+            </td>
+          </tr>
+          <tr>
+            <td class="price-list-table__td price-list-table__td--eco-class price-list-table__td--bottom" rowspan="3">
+              ЕВРО-3
+            </td>
+            <td class="price-list-table__td">
+              Роснефть
+            </td>
+            <td class="price-list-table__td">
+              42.34 р.
+            </td>
+            <td class="price-list-table__td price-list-table__td--right">
+              41.64 р.
+            </td>
+          </tr>
+          <tr>
+            <td class="price-list-table__td">
+              Газпромнефть
+            </td>
+            <td class="price-list-table__td">
+              -
+            </td>
+            <td class="price-list-table__td price-list-table__td--right">
+              -
+            </td>
+          </tr>
+          <tr>
+            <td class="price-list-table__td price-list-table__td--bottom">
+              Лукойл
+            </td>
+            <td class="price-list-table__td price-list-table__td--bottom">
+              45.16 р.
+            </td>
+            <td class="price-list-table__td price-list-table__td--right price-list-table__td--bottom">
+              43.98 р.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="page-main__delivery delivery">
+      <h2 class="visually-hidden">Рассчитайте стоимость и закажите топливо с доставкой</h2>
+      <form class="delivery__form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="delivery__fieldset">
+          <legend class="delivery__legend section-title">
+            Топливо с доставкой
+          </legend>
+          <ul class="delivery__form-list">
+            <li class="delivery__form-item">
+              <label class="delivery__label label">
+                Вид топлива
+              </label>
+              <div class="delivery__form-dropdown dropdown dropdown--nojs">
+                <button class="dropdown__button text-input" type="button">ДТ</button>
+                <ul class="dropdown__list">
+                  <li class="dropdown__item text-input" data-value="ai-95">
+                    АИ-95
+                  </li>
+                  <li class="dropdown__item text-input" data-value="ai-95-2">
+                    АИ-95-2
+                  </li>
+                  <li class="dropdown__item text-input" data-value="ai-95-3">
+                    АИ-95-3
+                  </li>
+                </ul>
+                <input class="dropdown__input visually-hidden" type="text" name="oil-type" value="do">
+              </div>
+            </li>
+            <li class="delivery__form-item delivery__form-item--slider">
+              <label class="delivery__label label" for="oil-size">
+                Объем топлива
+              </label>
+              <input class="delivery__input text-input" id="oil-size" type="text" name="oil-size" value="1670 литров" required>
+              <div class="delivery__form-slider slider">
+                <div class="slider__scale">
+                  <div class="slider__bar" style="width: 30%;"></div>
+                </div>
+                <div class="slider__toggle" tabindex="0"></div>
+              </div>
+            </li>
+            <li class="delivery__form-item">
+              <label class="delivery__label label" for="delivery-address">
+                Место доставки
+              </label>
+              <input class="delivery__input text-input" id="delivery-address" type="text" name="delivery-address" placeholder="Укажите место" required>
+            </li>
+            <li class="delivery__form-item">
+              <label class="delivery__label label" for="client-name">
+                Ваше имя
+              </label>
+              <input class="delivery__input text-input" id="client-name" type="text" name="client-name" placeholder="Иван" required>
+            </li>
+            <li class="delivery__form-item">
+              <label class="delivery__label label" for="client-phone">
+                Номер телефона
+              </label>
+              <input class="delivery__input text-input" id="client-phone" type="text" name="client-phone" pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$" placeholder="+7 (___) ___-__-__" required>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="delivery__form-total total">
+          <p class="total__title">
+            Итого
+          </p>
+          <dl class="total__list">
+            <div class="total__item-wrapper">
+              <dt class="total__item">
+                <p class="total__item-text">
+                  Стоимость топлива
+                </p>
+              </dt>
+              <dd class="total__item-description">
+                77 350.00 ₽
+              </dd>
+            </div>
+            <div class="total__item-wrapper">
+              <dt class="total__item">
+                <p class="total__item-text total__item-text--have-sub">
+                  Цена за литр:
+                </p>
+                <p class="total__item-subtext">
+                  Цена и стоимость указаны ориентировочно.<br>
+                  Точные цену и стоимость собщит наш менеджер при подтверждении заявки.
+                </p>
+              </dt>
+              <dd class="total__item-description">
+                45.50 ₽
+              </dd>
+            </div>
+            <div class="total__item-wrapper">
+              <dt class="total__item total__item">
+                <p class="total__item-text total__item-text--have-sub">
+                  Выгода:
+                </p>
+                <p class="total__item-subtext">
+                  При цене на АЗС  49.59 ₽  за литр, цены актуальны на  23.11.2020 г.
+                </p>
+              </dt>
+              <dd class="total__item-description total__item-description--benefit">
+                6 953.00 ₽
+              </dd>
+            </div>
+          </dl>
+          <button class="total__button button button--long" type="submit">
+            Заказать топливо
+          </button>
+        </div>
+      </form>
+    </section>
+    <section class="page-main__order order">
+      <h2 class="visually-hidden">
+        Порядок выполнения заказа
+      </h2>
+      <p class="order__title section-title">
+        Как мы работаем
+      </p>
+      <ul class="order__list">
+        <li class="order__item order__item--ordering order__item--arrow">
+          <h3 class="order__item-title">
+            Оформление заявки
+          </h3>
+          <p class="order__item-text">
+            Заполните заявку на сайте, укажите удобное для вас место приезда заправщика, сорт и количество топлива, которое хотите купить
+          </p>
+          <p class="order__item-duration">
+            1-3 мин.
+          </p>
+        </li>
+        <li class="order__item order__item--call order__item--arrow">
+          <h3 class="order__item-title">
+            Подтверждение заявки менеджером
+          </h3>
+          <p class="order__item-text">
+            Дождитесь звонка нашего менеджера для уточнения условий заказа
+          </p>
+          <p class="order__item-duration">
+            1-3 мин.
+          </p>
+        </li>
+        <li class="order__item order__item--implementation">
+          <h3 class="order__item-title">
+            Заправка вашего автомобиля
+          </h3>
+          <p class="order__item-text order__item-text--sub">
+            В назначенное время приедет заправщик и заправит автомобиль топливом.
+          </p>
+          <p class="order__item-subtext">
+            Если у заказчика есть действующий договор на топливные карты, то при оплате можно провести транзакцию через терминал. Переносное устройство есть у каждого заправщика
+          </p>
+          <p class="order__item-duration">
+            30-90 мин.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <!-- <section class="page-main__certificates certificates">
+      <h2 class="certificates__title section-title">
+        Сертификаты качества топлива
+      </h2>
+      <div class="certificates__carousel-buttons carousel-buttons">
+        <button class="carousel-buttons__prew carousel-buttons__button" aria-label="Листать далее"></button>
+        <button class="carousel-buttons__next carousel-buttons__button carousel-buttons__button--next" aria-label="Листать назад"></button>
+      </div>
+      <div class="certificates__carousel carousel">
+        <ul class="carousel__track">
+          <li class="carousel__item">
+            <img class="carousel__image" src="img/carousel/certificate-1.jpg" width="217" height="301" alt="Сертификат об... от...">
+          </li>
+          <li class="carousel__item">
+            <img class="carousel__image" src="img/carousel/certificate-2.jpg" width="217" height="301" alt="Сертификат об... от...">
+          </li>
+          <li class="carousel__item">
+            <img class="carousel__image" src="img/carousel/certificate-3.jpg" width="217" height="301" alt="Сертификат об... от...">
+          </li>
+          <li class="carousel__item">
+            <img class="carousel__image" src="img/carousel/certificate-4.jpg" width="217" height="301" alt="Сертификат об... от...">
+          </li>
+          <li class="carousel__item">
+            <img class="carousel__image" src="img/carousel/certificate-2.jpg" width="217" height="301" alt="Сертификат об... от...">
+          </li>
+          <li class="carousel__item">
+            <img class="carousel__image" src="img/carousel/certificate-4.jpg" width="217" height="301" alt="Сертификат об... от...">
+          </li>
+          <li class="carousel__item">
+            <img class="carousel__image" src="img/carousel/certificate-1.jpg" width="217" height="301" alt="Сертификат об... от...">
+          </li>
+          <li class="carousel__item">
+            <img class="carousel__image" src="img/carousel/certificate-3.jpg" width="217" height="301" alt="Сертификат об... от...">
+          </li>
+        </ul>
+      </div>
+    </section> -->
+  </main>
+  <script src="js/dropdown.js"></script>
+  <!-- <script src="js/carousel.js"></script> -->
+</body>
+</html>

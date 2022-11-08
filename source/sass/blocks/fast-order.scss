@@ -1,0 +1,84 @@
+.fast-order {
+  width: 928px;
+  padding: 49px 96px 43px 96px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.fast-order__fieldset {
+  border: none;
+}
+
+.fast-order__legend {
+  margin-bottom: 30px;
+  @include fontSizeHeightWeight(36px, 43.88px, 700);
+}
+
+.fast-order__form-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.fast-order__blue-text {
+  color: $basic-blue;
+}
+
+.fast-order__input-list {
+  display: grid;
+  grid-template-columns: repeat(2, 273px);
+  column-gap: 14px;
+  row-gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fast-order__input-item {
+  display: flex;
+  flex-direction: column;
+
+  &--checkbox {
+    display: block;
+    grid-column: 1 / -1;
+  }
+}
+
+.fast-order__label {
+  margin-bottom: 8px;
+}
+
+.checkbox-label {
+  padding-left: 40px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 23px;
+    height: 23px;
+    display: block;
+    border: 1px solid $border-grey;
+    position: absolute;
+    top: -4px;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    width: 13.25px;
+    height: 10.5px;
+    display: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.16666 4.58334L4.91666 8.33334L12.4167 0.833344' stroke='black' stroke-width='1.8'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 3px;
+    left: 6px;
+  }
+}
+
+.checkbox-input:checked + label::after {
+  display: block;
+}
+
+.fast-order__submit-button {
+  margin-top: 23px;
+}

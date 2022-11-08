@@ -1,0 +1,38 @@
+.carousel-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.carousel-buttons__button {
+  width: 55px;
+  height: 55px;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid $border-grey;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 11.33px;
+    height: 16.67px;
+    display: block;
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='16' viewBox='0 0 10 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.5 14.6667L1.83333 8.00008L8.5 1.33342' stroke='black' stroke-width='1.8'/%3E%3C/svg%3E ");
+    background-repeat: no-repeat;
+  }
+
+  &--next::before {
+    transform: rotate(180deg);
+    left: 22px;
+  }
+
+  &:hover {
+    background-color: darken($white, 7%);
+  }
+  &:active {
+    background-color: darken($white, 12%);
+  }
+}

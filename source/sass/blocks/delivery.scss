@@ -1,0 +1,52 @@
+.delivery {
+  padding: 74px 0;
+  background-color: $background-grey;
+}
+
+.delivery__form {
+  width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delivery__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.delivery__legend {
+  margin-bottom: 34px;
+}
+
+.delivery__form-list {
+  width: 409px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.delivery__form-item {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+
+  &--slider {
+    position: relative;
+  }
+}
+
+.delivery__form-slider {
+  position: absolute;
+  bottom: 0;
+}
+
+.delivery__label {
+  margin-bottom: 8px;
+}
+
+.delivery__form-total {
+  margin-top: 62px;
+}

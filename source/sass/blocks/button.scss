@@ -1,0 +1,26 @@
+.button {
+  display: block;
+  padding: 14px 36px 16px 36px;
+  background-color: $basic-blue;
+  border: none;
+  color: $white;
+  @include fontSizeHeightWeight(13px, 15.85px, 600);
+
+  &:hover {
+    background-color: lighten($basic-blue, 5%);
+  }
+  &:active {
+    background-color: darken($basic-blue, 10%);
+  }
+
+  &--icon {
+    padding-left: 44px;
+    padding-right: 14px;
+    position: relative;
+  }
+
+  &--long {
+    padding-left: 67px;
+    padding-right: 67px;
+  }
+}

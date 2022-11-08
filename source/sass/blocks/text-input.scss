@@ -1,0 +1,5 @@
+.text-input {
+  padding: 12px 15px 15px 15px;
+  @include fontSizeHeightWeight(14px, 17.07px);
+  border: 1px solid $border-grey;
+}

@@ -1,0 +1,19 @@
+// Colors
+
+$basic-blue: #098FCF;
+$dark-blue: #043C77;
+$black: #000000;
+$white: #ffffff;
+$background-grey: #F9F9F9;
+$border-grey: #D4D4D4;
+$subtext-grey: #565656;
+$total-item-border-grey: #E7E7E7;
+
+
+// Mixins
+
+@mixin  fontSizeHeightWeight ($size, $height, $weight: 400) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}

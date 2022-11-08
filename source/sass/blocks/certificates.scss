@@ -1,0 +1,19 @@
+.certificates {
+  width: 1120px;
+  display: grid;
+  grid-template-columns: 1fr 150px;
+
+}
+
+.certificates__title {
+  grid-column: 1 / 2;
+}
+
+.certificates__carousel-buttons {
+  grid-column: 2 / 3;
+  align-self: center;
+}
+
+.certificates__carousel {
+  grid-column: 1 / -1;
+}

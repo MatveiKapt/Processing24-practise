@@ -1,0 +1,58 @@
+.priсe-list-table {
+  width: 1120px;
+  border-spacing: 0;
+  @include fontSizeHeightWeight(13px, 15.85px, 600);
+}
+
+.priсe-list-table__title {
+  margin-bottom: 48px;
+  text-align: left;
+}
+
+.priсe-list-table__first-sort {
+  border-bottom: 20px solid $white;
+}
+
+.priсe-list-table__th-x {
+  padding: 19px 17px 21px 20px;
+  background-color: $dark-blue;
+  border-bottom: 20px solid $white;
+  text-align: left;
+  color: $white;
+}
+
+.priсe-list-table__th-y {
+  padding: 16px 20px;
+  background-color: $basic-blue;
+  text-align: left;
+  vertical-align: top;
+  @include fontSizeHeightWeight(24px, 29.26px, 700);
+  color: $white;
+}
+
+.price-list-table__td {
+  padding: 16px 30px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid $border-grey;
+
+  &--eco-class {
+    border-right: 1px solid $border-grey;
+  }
+
+  &--top {
+    border-top: 1px solid $border-grey;
+  }
+
+  &--right {
+    border-right: 1px solid $border-grey;
+  }
+
+  &--bottom {
+    border-bottom: 1px solid $border-grey;
+  }
+}
+
+.price-list-table__crutch-tr {
+  height: 20px;
+}

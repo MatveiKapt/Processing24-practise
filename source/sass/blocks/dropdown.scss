@@ -1,0 +1,61 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdown__button {
+  width: 100%;
+  padding-right: 24px;
+  background-color: $white;
+  text-align: left;
+  position: relative;
+  @include fontSizeHeightWeight(14px, 17.07px, 400);
+  cursor: pointer;
+
+  &::before {
+    content: "";
+      width: 11.33px;
+      height: 8.17px;
+      display: block;
+      position: absolute;
+      top: 41%;
+      right: 13px;
+      background-image: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.833328 1.5L5 5.66667L9.16666 1.5' stroke='black' stroke-width='1.8'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      pointer-events: none;
+  }
+}
+
+.dropdown__list {
+  display: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 53px;
+  left: 0;
+  list-style: none;
+  background-color: $white;
+  box-shadow: 0 4px 8px rgba($black, 0.6);
+  z-index: 1;
+
+  &--show {
+    display: block;
+  }
+}
+.dropdown--nojs .dropdown__list {
+  display: block;
+  position: static;
+}
+
+.dropdown__item {
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    border-bottom: none;
+  }
+
+  &:hover {
+    background-color: darken($white, 7%);
+  }
+}

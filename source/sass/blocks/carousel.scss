@@ -1,0 +1,26 @@
+.carousel {
+  overflow: hidden;
+}
+
+.carousel__track {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.carousel__item {
+  min-width: 257px;
+  padding: 28px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.carousel__image {
+  display: block;
+  width: 217px;
+  height: 301px;
+}
